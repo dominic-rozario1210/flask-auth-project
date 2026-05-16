@@ -4,13 +4,13 @@ from werkzeug.security import generate_password_hash,check_password_hash
 
 app=Flask(__name__)
 
-app.secret_key="secret123"
+app.secret_key="YOUR_SECRET_KEY"
 
 conn=mysql.connector.connect(
     host="localhost",
     user="root",
-    password="12101999",
-    database="auth_project"
+    password="YOUR_PASSWORD",
+    database="Yourdb"
 )
 cursor=conn.cursor(dictionary=True)
 
