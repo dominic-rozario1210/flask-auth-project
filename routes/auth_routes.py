@@ -63,6 +63,7 @@ def  login():
             "message":"wrong password"
         }),401
     session["user"]=user["username"]
+    session["user_id"]=user["id"]
     return jsonify({
         "message":"login successful"
     }),200

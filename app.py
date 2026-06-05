@@ -3,12 +3,14 @@ from decorators import login_required
 import os
 from dotenv import load_dotenv
 from routes.auth_routes import auth_bp
+from routes.task_routes import task_bp
 
 load_dotenv()
 
 
 app=Flask(__name__)
 app.register_blueprint(auth_bp)
+app.register_blueprint(task_bp)
 app.secret_key=os.getenv("SECRET_KEY")
 
 

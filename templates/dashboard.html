@@ -8,15 +8,29 @@ Dashboard
 {% endblock %}
 {% block content %}
     
-    <div class="navbar">
-        <h2>Dashboard</h2>
-        <a href="/logout" class="logout-btn">Logout</a>
-    </div>
-    <div class="welcome">
+<div class="navbar">
+    <h2>Dashboard</h2>
+    <a href="/logout" class="logout-btn">Logout</a>
+</div>
+<div class="welcome">
    
-    <h1>
-        Welcome {{username}}
-    </h1>
-     <p> You are successfully logged in</p>
-    </div>
+<h1>
+     Welcome {{username}}
+</h1>
+<p> You are successfully logged in</p>
+</div>
+<div class="task-container">
+
+  <h2>My Tasks</h2>
+  <form id="task_form">
+  <input type="text" id="task" placeholder="Enter Task" required>
+  <button type="submit" id="task_btn">Add Task</button>
+  </form>
+
+  <p id="message"></p>
+  <div id="task_list"></div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static',filename='js/task.js')}}"></script>
 {% endblock %}

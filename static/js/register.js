@@ -2,7 +2,7 @@ let form=document.querySelector("#form");
 let btn=document.querySelector("#btn");
 let message=document.querySelector("#message");
 
-form.addEventListener("submit", async function(){
+form.addEventListener("submit", async function(event){
     event.preventDefault()
     let username=document.querySelector("#username").value;
     let password=document.querySelector("#password").value;
