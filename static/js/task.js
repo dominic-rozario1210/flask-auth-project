@@ -40,10 +40,13 @@ async function getTasks(){
 
     tasks.forEach(function(task){
         taskList.innerHTML +=`
-        <p>${task.task_name}
-          <button onclick="editTask(${task.id},'${task.task_name}')">Edit</button>
-          <button onclick="deleteTask(${task.id})">Delete</button>
-        </p>
+        <div class="task-item">
+           <span>${task.task_name}</span>
+           <div class="task-buttons">
+             <button onclick="editTask(${task.id},'${task.task_name}')">Edit</button>
+             <button onclick="deleteTask(${task.id})">Delete</button>
+           </div>
+        </div>   
         `;
     });
 }

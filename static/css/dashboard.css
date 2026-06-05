@@ -34,7 +34,7 @@ body{
 }
 .welcome{
     background: white;
-    width: 40%;
+    width: 50%;
     margin: 60px auto;
     border-radius: 10px;
     text-align: center;
@@ -48,4 +48,67 @@ body{
 .welcome p{
     color: rgb(102, 99, 99);
     font-size: 20px;
+}
+.task-container{
+    background: white;
+    width: 50%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+.task-container h2{
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+#task_form{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+#task_btn{
+    padding: 10px 15px;
+    background:#007bff ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#task_btn:hover{
+    background:#07386c ;
+}
+#message{
+    margin-bottom: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#f8f8f8 ;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.task-buttons{
+    display: flex;
+    gap: 8px;
+}
+.task-buttons button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-buttons button:first-child{
+    background: orange;
+    color: white;
+}
+.task-buttons button:last-child{
+    background: red;
+    color: white;
 }
