@@ -118,6 +118,21 @@ Through this project, I learned:
 * CRUD Operations
 * Git & GitHub Workflow
 
+## Screenshots
+
+### Register Page
+
+![Register Page](screenshots/register.png)
+
+### Login Page
+
+![Login Page](screenshots/login.png)
+
+### Dashboard / Task Manager
+
+![Dashboard](screenshots/dashboard.png)
+
+
 ## Future Improvements
 
 * Deployment to Cloud Platform
